@@ -5,7 +5,7 @@
 3. We expect to see evidence of good development processes. Write tests, and commit often.
 4. When finished, do **not** submit a pull request to this repo. Instead, send us a link to your forked project.
 
-## Problem 1 - Bugfix
+## Problem 1 - Rails bugfix
 
 We have a `ListingTransaction` ActiveRecord model which is a financial transaction for a Airbnb listing.
 A `Listing` model can have many `ListingTransction` models, and an `Expense` model can have either 0 or 1 `ListingTransaction` models.
