@@ -78,3 +78,22 @@ When you're done, try running it on the following string and see what result you
 ```
 '!YTIRCO!IQIIQIDEMGMMIM F!O YMJMMSM!RA !EGEEJEHT FPFWFFO TUFUTUUO PAEJEEBEL TN!AIKIITIG ENVNNMNO ,RE!ENRNNNNIGGAGIGNE SNEOEEQ!EZ A RJRRDROF PETOTTJTS LLZLLEL!AMSXSSMS ENODOOSO'
 ```
+
+## Problem 3 - Equation guesser
+
+Write an `EquationGuesser` class that - in its constructor - takes a sequence of integers as one argument (the operands), and another integer as a second argument (the desired result). Your class should provide a method, `guess`, that takes an integer (`guesses`).
+
+When `guess` is called, your class should output string representations of equations, their result, and the difference between that result and the desired result `guesses` times. Finally, the class should output the number of guesses and what the best guess was.
+
+e.g.
+
+```
+> equation_guesser = EquationGuesser.new([1, 2, 3, 4], 24)
+> equation_guesser.guesses(3)
+1 + 2 + 3 + 4 = 10 (-14)
+1 * 2 * 3 * 4 = 24 (0)
+Guesses: 2 Best Guess: 1 * 2 * 3 * 4 = 24 (0)
+```
+
+If the equation is exactly equal to the desired result, the program should exit. For the sake of this exercise, you only need consider positive integers (i.e. use integer division). Your equations should honour standard operator precedence (e.g. multiplication before addition) and do not need to consider bracketed subexpressions (e.g. `(1 + 2) * (3 + 4)`).
+Try to make it so that your `guess` method can process up to 10 operands and 1000 guesses without taking more than 5 seconds.
