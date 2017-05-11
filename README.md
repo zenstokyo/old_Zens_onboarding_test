@@ -1,7 +1,7 @@
 # Zens onboarding programming exercises
 
 1. Fork this repo and make a branch for your changes.
-2. Please complete _all_ of the following problems.
+2. Please complete the following Ruby/Rails coding problems.
 3. We expect to see evidence of good development processes. Write tests, and commit often.
 4. When finished, do **not** submit a pull request to this repo. Instead, send us a link to your forked project.
 
@@ -59,4 +59,22 @@ end
 class Expense < ActiveRecord::Base
   has_one :listing_transaction
 end
+```
+
+## Problem 2 - String manipulation
+
+Write a `StringDemystifier` class that - when its `demystify` method is called - applies the
+following rules in order of precedence, and until they can no longer be applied to any string it
+is given in its constructor:
+
+* If a character has the same character to its left and right, it should be replaced with that other
+  character (i.e. AWA becomes AAA) unless the surrounding character is a space
+* Any sequence of six characters should be replaced with a single character, i.e. AAAAAA becomes A
+* Any instance of the exclamation mark (!) character causes the string to be reversed, and the
+  exclamation mark character removed
+
+When you're done, try running it on the following string and see what result you get. When you've gotten the problem right, you will know!
+
+```
+'!YTIRCO!IQIIQIDEMGMMIM F!O YMJMMSM!RA !EGEEJEHT FPFWFFO TUFUTUUO PAEJEEBEL TN!AIKIITIG ENVNNMNO ,RE!ENRNNNNIGGAGIGNE SNEOEEQ!EZ A RJRRDROF PETOTTJTS LLZLLEL!AMSXSSMS ENODOOSO'
 ```
