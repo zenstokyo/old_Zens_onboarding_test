@@ -68,7 +68,7 @@ following rules in order of precedence, and until they can no longer be applied 
 is given in its constructor:
 
 * If a character has the same character to its left and right, it should be replaced with that other
-  character (i.e. AWA becomes AAA) unless the surrounding character is a space
+  character (i.e. AWA becomes AAA) unless the surrounding character is an exclamation mark or a space.
 * Any sequence of six characters should be replaced with a single character, i.e. AAAAAA becomes A
 * Any instance of the exclamation mark (!) character causes the string to be reversed, and the
   exclamation mark character removed
